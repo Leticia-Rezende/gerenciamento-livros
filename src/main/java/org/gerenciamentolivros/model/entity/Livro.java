@@ -33,7 +33,7 @@ public class Livro {
     }
     // GET E SET
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
@@ -45,7 +45,7 @@ public class Livro {
         return autor;
     }
 
-    public String getAnopublicacao() {
+    public Double getAnopublicacao() {
         return anopublicacao;
     }
 

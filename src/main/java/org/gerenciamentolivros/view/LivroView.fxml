@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vBoxVeiculo" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gerenciamentolivros.controller.LivroController">
+<VBox fx:id="vBoxLivro" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gerenciamentolivros.controller.LivroController">
    <children>
-      <Label fx:id="lbVeiculo" text="Livros">
+      <Label fx:id="lbLivro" text="Livros">
          <padding>
             <Insets bottom="10.0" left="15.0" top="10.0" />
          </padding>
@@ -27,9 +27,9 @@
             <Insets />
          </VBox.margin>
       </ToolBar>
-      <TableView fx:id="tbVeiculo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+      <TableView fx:id="tblivro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
          <columns>
-            <TableColumn fx:id="columnIdLivro" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="columnIdIdLivro" prefWidth="50.0" text="ID" />
             <TableColumn fx:id="columnTituloLivro" prefWidth="83.0" text="Título" />
             <TableColumn fx:id="columnAutorLivro" prefWidth="63.0" text="Autor" />
             <TableColumn fx:id="columnAnoPublicacaoLivro" prefWidth="104.0" text="Ano Publicação" />

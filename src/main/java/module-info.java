@@ -11,6 +11,7 @@ module org.gerenciamentolivros {
     requires static lombok;
 
     opens org.gerenciamentolivros to javafx.fxml;
+    opens org.gerenciamentolivros.model.entity to org.hibernate.orm.core;
     exports org.gerenciamentolivros;
     exports org.gerenciamentolivros.controller;
     opens org.gerenciamentolivros.controller to javafx.fxml;

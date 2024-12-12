@@ -12,6 +12,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LivroViewModalController extends  LivroController{
+
     @FXML
     TextField txtId;
     @FXML
@@ -38,6 +39,7 @@ public class LivroViewModalController extends  LivroController{
     @Override
     public void initialize(URL location, ResourceBundle resources) {}
 
+
     //*****************************************************************************************************************
     // TRATAMENTO DE EVENTOS
     @FXML
@@ -62,7 +64,7 @@ public class LivroViewModalController extends  LivroController{
     @FXML
     public void btnExcluirOnAction() {
         lerCampos();
-        livroServices.removeLivro(livro.getId());
+        livroServices.removeLivro(Long.valueOf(livro.getId()));
         fecharModal();
     }
 
@@ -87,10 +89,10 @@ public class LivroViewModalController extends  LivroController{
 
     private void preencherCampos() {
         if (livro != null) {
-            txtId.setText(livro.getId());
+            txtId.setText(String.valueOf(livro.getId()));
             txtTitulo.setText(livro.getTitulo());
             txtAutor.setText(livro.getAutor());
-            txtAnopublicacao.setText(livro.getAnopublicacao());
+            txtAnopublicacao.setText(livro.getAnopublicacao().toString());
             txtGenero.setText(livro.getGenero());
         }
     }

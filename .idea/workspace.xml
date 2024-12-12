@@ -4,33 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b1925c-a605-4896-b96f-8010cca0fb3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroViewModalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/entity/Livro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/services/LivroServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/persistence/LivroDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/Alerta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/PathFXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroViewModal.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/gerenciamentolivros/hibernate.properties" afterDir="false" />
+    <list default="true" id="09b1925c-a605-4896-b96f-8010cca0fb3c" name="Changes" comment="Criação de uma aplicação JavaFX">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroViewModalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroViewModalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/entity/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/entity/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/PathFXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/PathFXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroViewModal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroViewModal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Unifan/java-syslocacar",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Unifan/java-syslocacar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Unifan\gerenciamento-livros\src\main\java\org\gerenciamentolivros\view" />
@@ -100,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1733429401685</updated>
     </task>
+    <task id="LOCAL-00001" summary="Criação de uma aplicação JavaFX">
+      <created>1733444819277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733444819277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criação de uma aplicação JavaFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação de uma aplicação JavaFX" />
   </component>
 </project>
