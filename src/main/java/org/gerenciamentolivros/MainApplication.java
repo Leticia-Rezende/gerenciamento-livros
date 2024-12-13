@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import lombok.Getter;
 import org.gerenciamentolivros.utils.PathFXML;
@@ -33,6 +34,7 @@ public class MainApplication extends Application {
         stage.setTitle("Gerenciamento de Livros!");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {

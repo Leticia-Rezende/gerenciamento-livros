@@ -24,8 +24,9 @@ public class Livro {
     public Livro() {
     }
 
-    public Livro( String titulo, String autor, Double anopublicacao, String genero) {
+    public Livro( Long id, String titulo, String autor, Double anopublicacao, String genero) {
 
+        this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.anopublicacao = anopublicacao;
@@ -33,24 +34,19 @@ public class Livro {
     }
     // GET E SET
 
-    public Long getId() {
-        return id;
+    public Long getId() {return id;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTitulo() {return titulo;
     }
 
-    public String getAutor() {
-        return autor;
+    public String getAutor() {return autor;
     }
 
-    public Double getAnopublicacao() {
-        return anopublicacao;
+    public Double getAnopublicacao() {return anopublicacao;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getGenero() {return genero;
     }
 
 }

@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
-import org.gerenciamentolivros.model.entity.Livro;
 import org.gerenciamentolivros.model.services.LivroServices;
 import org.gerenciamentolivros.utils.Alerta;
 import org.gerenciamentolivros.utils.PathFXML;
@@ -29,21 +28,19 @@ public class MainController implements Initializable {
     Menu menuCadastro;
     @FXML
     MenuItem menuItemLivros;
-
-
     @FXML
-    private Label welcomeText;
+    MenuItem menuItemAbout;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
 
+    //******************************************************************************************************************
+    // INITIALIZER
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
 
+    //******************************************************************************************************************
+    // TRATAMENTO DE EVENTOS
     @FXML
     public void onCadastroLivroAction() {
         loadView("\\LivroView.fxml");
@@ -68,7 +65,7 @@ public class MainController implements Initializable {
             LivroController controller = fxmlLoader.getController();
             controller.setLivroServices(new LivroServices());
             controller.updateTableView();
-            controller.tblivro.prefHeightProperty().bind(vBoxMain.heightProperty());
+            controller.tbLivro.prefHeightProperty().bind(vBoxMain.heightProperty());
 
         } catch (RuntimeException | IOException e) {
             Alerta.exibirAlerta("Error","Erro ao carregar a view",e.getMessage(), Alert.AlertType.ERROR);

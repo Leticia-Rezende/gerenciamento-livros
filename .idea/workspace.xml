@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b1925c-a605-4896-b96f-8010cca0fb3c" name="Changes" comment="Criação de uma aplicação JavaFX">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/MainView.fxml" afterDir="false" />
+    <list default="true" id="09b1925c-a605-4896-b96f-8010cca0fb3c" name="Changes" comment="Atualização">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/MainApplication.java" afterDir="false" />
@@ -13,10 +12,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroViewModalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/LivroViewModalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/entity/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/entity/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/PathFXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/utils/PathFXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/services/LivroServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/model/services/LivroServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/persistence/LivroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/persistence/LivroDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroViewModal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/LivroViewModal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gerenciamentolivros/view/MainView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +49,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Unifan/java-syslocacar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
@@ -93,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733444819277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atualização">
+      <created>1734036969761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734036969761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criação de uma aplicação JavaFX" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de uma aplicação JavaFX" />
+    <MESSAGE value="Atualização" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização" />
   </component>
 </project>

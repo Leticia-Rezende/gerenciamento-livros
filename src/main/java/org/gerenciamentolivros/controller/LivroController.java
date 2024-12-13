@@ -27,12 +27,14 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class LivroController implements Initializable {
+
     @FXML
     VBox vBoxLivro;
+
     @FXML
     Label lbLivro;
     @FXML
-    TableView<Livro> tblivro;
+    TableView<Livro> tbLivro;
     @FXML
     TableColumn<Livro, Integer> columnIdIdLivro;
     @FXML
@@ -45,6 +47,7 @@ public class LivroController implements Initializable {
     TableColumn <Livro, String> columnGeneroLivro;
     @FXML
     Button btnNovo;
+
 
     protected Livro livro;
     private String pathLivro;
@@ -65,13 +68,13 @@ public class LivroController implements Initializable {
         columnTituloLivro.setCellValueFactory(new PropertyValueFactory<>("titulo"));
         columnAutorLivro.setCellValueFactory(new PropertyValueFactory<>("autor"));
         columnAnoPublicacaoLivro.setCellValueFactory(new PropertyValueFactory<>("anopublicacao"));
-        columnGeneroLivro.setCellValueFactory(new PropertyValueFactory<>("livro"));
+        columnGeneroLivro.setCellValueFactory(new PropertyValueFactory<>("genero"));
 
-        tblivro.setOnMouseClicked(event -> {
+        tbLivro.setOnMouseClicked(event -> {
             if(event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
-                this.livro = tblivro.getSelectionModel().getSelectedItem();
+                this.livro = tbLivro.getSelectionModel().getSelectedItem();
                 if(this.livro != null) {
-                    System.out.println("Duplo clique em: " + this.livro.getAnopublicacao());
+                    System.out.println("Duplo clique em: " + this.livro.getTitulo());
                     modalView("Livro","\\LivroViewModal.fxml");
                     updateTableView();
                 }
@@ -109,7 +112,7 @@ public class LivroController implements Initializable {
         List<Livro> lista = livroServices.getAllLivros();
         lista.forEach( (obj) -> System.out.println(obj.getId() +", "+ obj.getTitulo() +", "+obj.getAutor() + ", " + obj.getAnopublicacao() + ", "+obj.getGenero()));
         ObservableList<Livro> observableList = FXCollections.observableList(lista);
-        tblivro.setItems(observableList);
+        tbLivro.setItems(observableList);
     }
 
     //******************************************************************************************************************

@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 
 public class LivroViewModalController extends  LivroController{
 
+
     @FXML
     TextField txtId;
     @FXML
@@ -20,7 +21,7 @@ public class LivroViewModalController extends  LivroController{
     @FXML
     TextField txtAutor;
     @FXML
-    TextField txtAnopublicacao;
+    TextField txtAnoPublicacao;
     @FXML
     TextField txtGenero;
     @FXML
@@ -70,6 +71,7 @@ public class LivroViewModalController extends  LivroController{
 
     @FXML
     public void btnCancelarOnAction() {
+
         fecharModal();
     }
 
@@ -92,7 +94,7 @@ public class LivroViewModalController extends  LivroController{
             txtId.setText(String.valueOf(livro.getId()));
             txtTitulo.setText(livro.getTitulo());
             txtAutor.setText(livro.getAutor());
-            txtAnopublicacao.setText(livro.getAnopublicacao().toString());
+            txtAnoPublicacao.setText(livro.getAnopublicacao().toString());
             txtGenero.setText(livro.getGenero());
         }
     }
@@ -101,7 +103,7 @@ public class LivroViewModalController extends  LivroController{
 
         this.livro.setTitulo(txtTitulo.getText());
         this.livro.setAutor(txtAutor.getText());
-        this.livro.setAnopublicacao(Double.valueOf(txtAnopublicacao.getText()));
+        this.livro.setAnopublicacao(Double.valueOf(txtAnoPublicacao.getText()));
         this.livro.setGenero(txtGenero.getText());
     }
 

@@ -3,10 +3,14 @@ package org.gerenciamentolivros.persistence;
 import org.gerenciamentolivros.model.entity.Livro;
 import org.gerenciamentolivros.utils.HibernateUtil;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+import org.hibernate.cfg.Configuration;
 
 import java.util.List;
+
+
 
 public class LivroDAO {
     public void save(Livro livro ) {

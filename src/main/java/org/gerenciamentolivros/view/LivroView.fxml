@@ -27,12 +27,12 @@
             <Insets />
          </VBox.margin>
       </ToolBar>
-      <TableView fx:id="tblivro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+      <TableView fx:id="tbLivro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
          <columns>
-            <TableColumn fx:id="columnIdIdLivro" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="columnIdIdLivro" prefWidth="50.0" text="Id" />
             <TableColumn fx:id="columnTituloLivro" prefWidth="83.0" text="Título" />
             <TableColumn fx:id="columnAutorLivro" prefWidth="63.0" text="Autor" />
-            <TableColumn fx:id="columnAnoPublicacaoLivro" prefWidth="104.0" text="Ano Publicação" />
+            <TableColumn fx:id="columnAnoPublicacaoLivro" prefWidth="104.0" text="AnoPublicação" />
             <TableColumn fx:id="columnGeneroLivro" prefWidth="75.0" text="Gênero" />
          </columns>
       </TableView>
