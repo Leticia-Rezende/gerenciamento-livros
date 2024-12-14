@@ -6,6 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
 public class Livro {
     @Id
@@ -16,7 +18,7 @@ public class Livro {
     @Setter
     private String autor;
     @Setter
-    private Double anopublicacao;
+    private Date anopublicacao;
     @Setter
     private String genero;
 
@@ -24,7 +26,7 @@ public class Livro {
     public Livro() {
     }
 
-    public Livro( Long id, String titulo, String autor, Double anopublicacao, String genero) {
+    public Livro( Long id, String titulo, String autor, Date anopublicacao, String genero) {
 
         this.id = id;
         this.titulo = titulo;
@@ -43,7 +45,7 @@ public class Livro {
     public String getAutor() {return autor;
     }
 
-    public Double getAnopublicacao() {return anopublicacao;
+    public Date getAnopublicacao() {return anopublicacao;
     }
 
     public String getGenero() {return genero;

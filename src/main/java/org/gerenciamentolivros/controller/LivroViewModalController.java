@@ -9,13 +9,14 @@ import org.gerenciamentolivros.model.entity.Livro;
 import org.gerenciamentolivros.model.services.LivroServices;
 
 import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class LivroViewModalController extends  LivroController{
 
 
-    @FXML
-    TextField txtId;
     @FXML
     TextField txtTitulo;
     @FXML
@@ -91,19 +92,41 @@ public class LivroViewModalController extends  LivroController{
 
     private void preencherCampos() {
         if (livro != null) {
-            txtId.setText(String.valueOf(livro.getId()));
             txtTitulo.setText(livro.getTitulo());
+
+            // Formatar a data para exibir apenas o ano
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+            if (livro.getAnopublicacao() != null) {
+                txtAnoPublicacao.setText(sdf.format(livro.getAnopublicacao()));
+            } else {
+                txtAnoPublicacao.setText(""); // Limpar o campo se a data for nula
+            }
+
             txtAutor.setText(livro.getAutor());
-            txtAnoPublicacao.setText(livro.getAnopublicacao().toString());
             txtGenero.setText(livro.getGenero());
         }
     }
 
     private void lerCampos() {
-
         this.livro.setTitulo(txtTitulo.getText());
+
+        // Lógica para ler o ano de lançamento
+        String anoText = txtAnoPublicacao.getText();
+        if (anoText.length() != 4 || !anoText.matches("\\d{4}")) {
+            throw new IllegalArgumentException("Por favor, insira um ano válido com 4 dígitos.");
+        }
+
+        int ano = Integer.parseInt(anoText);
+        String dataString = ano + "-01-01"; // Definindo 1º de janeiro como data padrão
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date anoDeLancamento = sdf.parse(dataString);
+            this.livro.setAnopublicacao(anoDeLancamento);
+        } catch (ParseException e) {
+            throw new RuntimeException("Erro ao converter a data: " + e.getMessage());
+        }
+
         this.livro.setAutor(txtAutor.getText());
-        this.livro.setAnopublicacao(Double.valueOf(txtAnoPublicacao.getText()));
         this.livro.setGenero(txtGenero.getText());
     }
 

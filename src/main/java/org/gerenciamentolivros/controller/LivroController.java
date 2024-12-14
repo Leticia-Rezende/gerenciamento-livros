@@ -23,6 +23,8 @@ import org.gerenciamentolivros.utils.PathFXML;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -42,7 +44,7 @@ public class LivroController implements Initializable {
     @FXML
     TableColumn <Livro, String> columnAutorLivro;
     @FXML
-    TableColumn <Livro, String> columnAnoPublicacaoLivro;
+    TableColumn <Livro, Date> columnAnoPublicacaoLivro;
     @FXML
     TableColumn <Livro, String> columnGeneroLivro;
     @FXML
@@ -66,8 +68,24 @@ public class LivroController implements Initializable {
         // Vincula as celulas de cada coluna com os campos da classe model
         columnIdIdLivro.setCellValueFactory(new PropertyValueFactory<>("id"));
         columnTituloLivro.setCellValueFactory(new PropertyValueFactory<>("titulo"));
+
+        // Usar um CellValueFactory para formatar a data
+        columnAnoPublicacaoLivro.setCellValueFactory(new PropertyValueFactory<>("anoDeLancamento"));
+        columnAnoPublicacaoLivro.setCellFactory(column -> new TableCell<Livro, Date>() {
+            private final SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+
+            @Override
+            protected void updateItem(Date item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                } else {
+                    setText(sdf.format(item));
+                }
+            }
+        });
+
         columnAutorLivro.setCellValueFactory(new PropertyValueFactory<>("autor"));
-        columnAnoPublicacaoLivro.setCellValueFactory(new PropertyValueFactory<>("anopublicacao"));
         columnGeneroLivro.setCellValueFactory(new PropertyValueFactory<>("genero"));
 
         tbLivro.setOnMouseClicked(event -> {

@@ -15,12 +15,14 @@
     </properties>
 
     <dependencies>
+
         <!-- HIBERNATE        -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>6.6.2.Final</version>
         </dependency>
+
         <!-- POSTGRES       -->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -40,11 +42,7 @@
             <artifactId>javafx-controls</artifactId>
             <version>22.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>17.0.2</version>
-        </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
